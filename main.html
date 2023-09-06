@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>UX/UI | Digital Marketing Portfolio</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <!-- font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e550af5d18.js" crossorigin="anonymous"></script>
+    <!-- END font from google fonts -->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/kent_logo.svg" class="logo">
+                <ul id="sidemenu"> <!--the ID is created for Java script Menu functions seen at the bottom  -->
+                    <li><a href="main.html" onclick="closemenu()">Home</a></li>  <!-- I added closemenu function for small screen so it hides automatically after click-->
+                    <li><a href="about.html" onclick="closemenu()">About</a></li> <!-- I added closemenu function for small screen so it hides automatically after click-->
+                    <li><a href="portfolio.html" onclick="closemenu()">Portfolio</a></li> <!-- I added closemenu function for small screen so it hides automatically after click-->
+                    <li><a href="#contact " onclick="closemenu()">Contact</a></li> <!-- I added closemenu function for small screen so it hides automatically after click-->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i><!-- this is CLOSE  icon for CSS smaller screen -->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!-- this is MENU icon for CSS smaller screen -->
+            </nav>
+            <div class="header-text">
+                <p>UX/UI Designer | Digital Marketing</p>
+                <h1>Hi there! <span>Kent</span> here.<br>Today is a perfect day to start something new =)</h1>
+            </div>
+        </div>
+        
+    </div>
+    <!--------- About Section ---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/cowbb.png ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm Kent!
+                        <br>Are you looking to create a memorable user journey that leads to conversions? 
+                        <br>As a UX/UI designer, I can help you achieve that. 
+                        <br>My designs are focused on creating a seamless user experience that is both 
+                        <br>visually appealing and easy to use. 
+                        <br>With my expertise, I can help you create an engaging and enjoyable user 
+                        <br>journey that will lead to increased conversions.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> <!-- yes, single quotation -->
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"> <!-- the class active-tab helps to toggle between skills -->
+                        <ul>
+                            <li><span>UX / UI</span><br>Designing website & application interface</li>
+                            <li><span>UX / UI</span><br>Designing website & application interface</li>
+                            <li><span>UX / UI</span><br>Designing website & application interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Expereince</span><br>Designing website & application interface</li>
+                            <li><span>Expereince</span><br>Designing website & application interface</li>
+                            <li><span>Expereince</span><br>Designing website & application interface</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Education</span><br>Designing website & application interface</li>
+                            <li><span>Education</span><br>Designing website & application interface</li>
+                            <li><span>Education</span><br>Designing website & application interface</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------- Service Section ---------->
+    <div>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">  <!-- Any DIV added below this line will show as a Grid  -->
+                     <div>
+                        <i class="fa-regular fa-pen-to-square"></i>
+                        <h2>UX Website Audit</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et imperdiet sapien, scelerisque lacinia neque. Suspendisse sed leo sit amet velit tempus tincidunt eget non ipsum. Sed posuere quam velit.</p>
+                        <a href="#">Learn more</a>
+                     </div>
+                     <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web/App Design Service</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et imperdiet sapien, scelerisque lacinia neque. Suspendisse sed leo sit amet velit tempus tincidunt eget non ipsum. Sed posuere quam velit.</p>
+                        <a href="#">Learn more</a>
+                     </div>
+                     <div>
+                        <i class="fa-regular fa-object-group"></i>
+                        <h2>Digital Marketing Service</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et imperdiet sapien, scelerisque lacinia neque. Suspendisse sed leo sit amet velit tempus tincidunt eget non ipsum. Sed posuere quam velit.</p>
+                        <a href="#">Learn more</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Portfolio Section ---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/cowbb.png">
+                    <div class="layer">
+                        <h3>OpenRice Mobile Website Revamp</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="# "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cowbb.png">
+                    <div class="layer">
+                        <h3>Responsive Display Interface</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="# "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cowbb.png">
+                    <div class="layer">
+                        <h3>Blockchain ResoluteLabs Website </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="# "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a> 
+        </div>
+    </div>
+
+    <!--------- Contact Section ---------->
+    <div id="contact">
+         <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Hey, let's talk.</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>kent.tomale@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>+1 (672)472-8799</p>
+                    
+                    <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-behance"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-behance"></i></a>
+                    </div>
+                    <a href="images/kent_logo.png" download class="btn btn2">Download CV</a> <!-- *** Notice btn2 is another class created, Settings can be set in css folder -->
+                </div>
+                <div class="contact-right ">
+                    <form name="submit-to-google-sheet"> <!-- used in line 212 Java Script -->
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+         </div>
+         <div class="copyright">
+             <p>Kent Tomale 2023 <i class="fa-regular fa-copyright"></i></p>
+         </div>
+    </div>
+
+    <!-- Java script stuff for ABOUT section. See the tutorial (https://www.youtube.com/watch?v=0YFrGy_mzjY) for better understanding -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links"); //defines the variable for calling Skills, Experience, Education tab 
+        var tabcontents = document.getElementsByClassName("tab-contents"); 
+        //this function below will hide the underline and details of the skill links
+        function opentab(tabname){
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link"); //this removes the active class link 
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab"); //this removes the active class tab 
+            }
+            event.currentTarget.classList.add("active-link"); 
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- Java script code for the small screen close and open menu icons -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- This script is from GitHub user (https://github.com/jamiewilson/form-to-google-sheets) -->
+    <!-- Add the url generated from Apps Script (Google Sheet Advance tab)-->
+    <!-- Also modified the line 218 owards to have message sent confirmation working -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwuEQU0XuNlpsOFeJSNkQC7af_23Jj3awnEDPbhY_M11IyF2JgN8wUbjeUdeFPLiZQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById ("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully. Let me get back to you within 48 hours."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
